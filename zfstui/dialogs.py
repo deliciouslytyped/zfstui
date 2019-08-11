@@ -140,7 +140,7 @@ def set_contents_filesystems(widget):
     widget.set_text_list(lines[1:])
     widget.footer = "[Ret] Properties───[S] Snapshots"
     widget.set_caption("Filesystems")
-    widget.set_rowselected_callback(on_snapshot_selected, widget)
+    widget.set_rowselected_callback(on_dataset_selected, widget)
     widget.key_callback = on_filesystemlist_key_press
 
 def set_keyboard_focus(widget):
