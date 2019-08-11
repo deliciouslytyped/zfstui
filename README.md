@@ -1,4 +1,5 @@
 Note: this fork is pretty thrown together.
+Get it with `nix-build https://github.com/deliciouslytyped/zfstui/tarball/master`
 
 # zfstui
 Terminal user interface for the ZFS filesystem
