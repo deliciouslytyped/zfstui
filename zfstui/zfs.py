@@ -81,7 +81,7 @@ def zfsSnapshotProperties(snapshotname):
 
 def check_zfs_executables():
     try:
-        cmd = ["/sbin/zpool", "list"]
+        cmd = ["zpool", "list"]
         stdout = subprocess.check_output(cmd, universal_newlines=True, stderr=subprocess.STDOUT)
     except FileNotFoundError as e:
         sys.exit("zpool command not found in path")
@@ -89,7 +89,7 @@ def check_zfs_executables():
         sys.exit(e.output)
     
     try:
-        cmd = ["/sbin/zfs", "list"]
+        cmd = ["zfs", "list"]
         stdout = subprocess.check_output(cmd, universal_newlines=True, stderr=subprocess.STDOUT)
     except FileNotFoundError as e:
         sys.exit("zfs command not found in path")
