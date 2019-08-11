@@ -1,3 +1,5 @@
+Note: this fork is pretty thrown together.
+
 # zfstui
 Terminal user interface for the ZFS filesystem
 
