@@ -1,3 +1,4 @@
+#TODO page up page down (on small list?) causes crash - index out of range
 import curses
 import curses.panel
 
